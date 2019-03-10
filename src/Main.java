@@ -19,6 +19,7 @@ public class Main extends Application {
         stage.setFullScreen(true);
         UserSettings.addDomain("https://www.google.ca/search?q=");
         UserSettings.addDomain("https://www.bestbuy.ca/en-CA/Search/SearchResults.aspx?query=");
+        UserSettings.addDomain("https://www.amazon.ca/s?k=");
         ControlPanel controlPanel = new ControlPanel(stage,this);
         Scene root = new Scene(controlPanel);
         stage.setScene(root);

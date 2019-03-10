@@ -34,6 +34,7 @@ public class BrowserWindow extends HBox {
         for(String url: domains) {
             WebView webView = new WebView();
             WebEngine webEngine = webView.getEngine();
+            webEngine.setUserAgent("Mozilla/5.0 (Linux; Android 4.4.4; One Build/KTU84L.H4)");
             webView.setPrefWidth(Toolkit.getDefaultToolkit().getScreenSize().getWidth() / number);
             webView.setPrefHeight(Toolkit.getDefaultToolkit().getScreenSize().getHeight());
             webEngine.load(url+searchItem);
